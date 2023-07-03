@@ -3,13 +3,14 @@
 	"tabWidth": 2,
 	"useTabs": true,
 	"semi": true,
-	"singleQuote": false,
+	"singleQuote": true,
 	"plugins": ["@trivago/prettier-plugin-sort-imports"],
 	"importOrder": [
 		"<THIRD_PARTY_MODULES>",
-		"^@/app/(.*)$",
-		"^@/pages/(.*)$",
-		"^@/widgets/(.*)$",
+		"^app/(.*)$",
+		"^pages/(.*)$",
+		"^shared/(.*)$",
+		"^widgets/(.*)$",
 		"(.scss)$"
 	],
 	"importOrderSeparation": true,
