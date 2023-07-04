@@ -2,7 +2,7 @@ import { BuildOptions } from './types/config';
 import HTMLWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import webpack from 'webpack';
-import {BundleAnalyzerPlugin} from "webpack-bundle-analyzer";
+import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 
 export function buildPlugins({
 	paths,
@@ -23,6 +23,6 @@ export function buildPlugins({
 		new webpack.HotModuleReplacementPlugin(),
 		new BundleAnalyzerPlugin({
 			openAnalyzer: false,
-		})
+		}),
 	];
 }
