@@ -4,8 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Button } from 'shared/ui/Button/Button';
 import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher/ui/ThemeSwitcher';
+import { LangSwitcher } from 'shared/ui/langSwitcher/LangSwitcher';
 
-// import { LangSwitcher } from 'shared/ui/langSwitcher/LangSwitcher';
 import cls from './Sidebar.module.scss';
 
 interface SidebarProps {
@@ -31,7 +31,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
 			</Button>
 			<div className={cls.switchers}>
 				<ThemeSwitcher />
-				{/*<LangSwitcher className={cls.lang} />*/}
+				<LangSwitcher className={cls.lang} />
 			</div>
 		</div>
 	);
