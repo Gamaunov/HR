@@ -21,7 +21,9 @@ jobs:
         run: npm install
       - name: build production project
         run: npm run build:prod
+        if: always()
       - name: prettier
         run: npm run pretty
       - name: unit testing
         run: npm run test:unit
+        if: always()
