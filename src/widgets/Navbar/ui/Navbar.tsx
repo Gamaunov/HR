@@ -1,6 +1,6 @@
 import { getUserAuthData, userActions } from 'entities/User';
 import { LoginModal } from 'features/AuthByUsername';
-import React, { useCallback, useState } from 'react';
+import { useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -54,7 +54,9 @@ export const Navbar = ({ className }: NavbarProps) => {
 			>
 				{t('Войти')}
 			</Button>
-			<LoginModal isOpen={isAuthModal} onClose={onCloseModal} />
+			{isAuthModal && (
+				<LoginModal isOpen={isAuthModal} onClose={onCloseModal} />
+			)}
 		</div>
 	);
 };
