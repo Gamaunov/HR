@@ -1,11 +1,4 @@
-import {
-	ChangeEvent,
-	InputHTMLAttributes,
-	memo,
-	useEffect,
-	useRef,
-	useState,
-} from 'react';
+import { InputHTMLAttributes, memo, useEffect, useRef, useState } from 'react';
 
 import { classNames } from 'shared/lib/classNames/classNames';
 
@@ -44,7 +37,7 @@ export const Input = memo((props: InputProps) => {
 		}
 	}, [autofocus]);
 
-	const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
+	const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
 		onChange?.(e.target.value);
 		setCaretPosition(e.target.value.length);
 	};

@@ -1,11 +1,4 @@
-import {
-	MouseEvent,
-	ReactNode,
-	useCallback,
-	useEffect,
-	useRef,
-	useState,
-} from 'react';
+import { ReactNode, useCallback, useEffect, useRef, useState } from 'react';
 
 import { useTheme } from 'app/providers/ThemeProvider';
 
@@ -48,7 +41,7 @@ export const Modal = (props: ModalProps) => {
 		}
 	}, [onClose]);
 
-	// New Links
+	// Новые ссылки!!!
 	const onKeyDown = useCallback(
 		(e: KeyboardEvent) => {
 			if (e.key === 'Escape') {
@@ -58,7 +51,7 @@ export const Modal = (props: ModalProps) => {
 		[closeHandler]
 	);
 
-	const onContentClick = (e: MouseEvent) => {
+	const onContentClick = (e: React.MouseEvent) => {
 		e.stopPropagation();
 	};
 
@@ -84,7 +77,9 @@ export const Modal = (props: ModalProps) => {
 
 	return (
 		<Portal>
-			<div className={classNames(cls.Modal, mods, [className])}>
+			<div
+				className={classNames(cls.Modal, mods, [className, theme, 'app_modal'])}
+			>
 				<div className={cls.overlay} onClick={closeHandler}>
 					<div className={cls.content} onClick={onContentClick}>
 						{children}
