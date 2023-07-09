@@ -1,5 +1,5 @@
 import { userActions } from 'entities/User';
-import React, { Suspense, useEffect } from 'react';
+import { Suspense, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 
 import { useTheme } from 'app/providers/ThemeProvider';
