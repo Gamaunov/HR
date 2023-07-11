@@ -18,7 +18,15 @@
   "Введите username": "Enter username",
   "Введите пароль": "Enter password",
   "Форма авторизации": "Auth form",
-  "Вы ввели неверный логин или пароль": "Uncorrect username or password",
+  "Вы ввели неверный логин или пароль": "Incorrect username or password",
   "Выйти": "Logout",
-  "Профиль":  "Profile"
+  "Укажите валюту": "Choose currency",
+  "Укажите страну": "Choose country",
+  "Профиль": "Profile",
+  "Статья не найдена": "The Article Not Found",
+  "Произошла ошибка при загрузке статьи": {
+    "": "There was an error when uploading the article"
+  },
+  "Комментарии отсутствуют": "There is no comments",
+  "Статьи": "Articles"
 }

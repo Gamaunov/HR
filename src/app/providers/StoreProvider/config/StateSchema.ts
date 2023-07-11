@@ -5,22 +5,26 @@ import {
 	ReducersMapObject,
 } from '@reduxjs/toolkit';
 import { AxiosInstance } from 'axios';
+import { ArticleDetailsSchema } from 'entities/Article';
 import { CounterSchema } from 'entities/Counter';
 import { ProfileSchema } from 'entities/Profile';
 import { UserSchema } from 'entities/User';
 import { LoginSchema } from 'features/AuthByUsername';
 import { To } from 'history';
 import { NavigateOptions } from 'react-router';
-import { CombinedState, Dispatch } from 'redux';
+import { CombinedState } from 'redux';
 
-import { AppDispatch } from 'app/providers/StoreProvider';
+import { ArticleDetailsCommentsSchema } from 'pages/ArticleDetailsPage';
 
 export interface StateSchema {
 	counter: CounterSchema;
 	user: UserSchema;
 
+	// Асинхронные редюсеры
 	loginForm?: LoginSchema;
 	profile?: ProfileSchema;
+	articleDetails?: ArticleDetailsSchema;
+	articleDetailsComments?: ArticleDetailsCommentsSchema;
 }
 
 export type StateSchemaKey = keyof StateSchema;
