@@ -15,3 +15,5 @@
 ###
 <img src="https://github.com/Gamaunov/HR/blob/main/src/shared/assets/design/2.png"/>
 <img src="https://github.com/Gamaunov/HR/blob/main/src/shared/assets/design/1.png"/>
+
+Подробнее о структуре проекта вы можете почитать <a href="https://feature-sliced.design/">здесь</a>
