@@ -4,8 +4,6 @@ import {
 	createEntityAdapter,
 	createSlice,
 } from '@reduxjs/toolkit';
-import { Article } from 'entities/Article';
-import { fetchArticleById } from 'entities/Article/model/services/fetchArticleById/fetchArticleById';
 import { Comment } from 'entities/Comment';
 
 import { StateSchema } from 'app/providers/StoreProvider';

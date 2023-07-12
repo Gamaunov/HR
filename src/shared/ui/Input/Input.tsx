@@ -1,10 +1,4 @@
-import React, {
-	InputHTMLAttributes,
-	memo,
-	useEffect,
-	useRef,
-	useState,
-} from 'react';
+import { InputHTMLAttributes, memo, useEffect, useRef, useState } from 'react';
 
 import { Mods, classNames } from 'shared/lib/classNames/classNames';
 
